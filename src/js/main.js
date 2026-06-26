@@ -29,14 +29,24 @@ const gridBtn = document.querySelector('.cards-section__view-btn--tiles');
 const listBtn = document.querySelector('.cards-section__view-btn--list');
 const cardsGrid = document.querySelector('.cards-grid');
 
-gridBtn?.addEventListener('click', () => {
-    cardsGrid.classList.remove('cards-grid--list');
-    gridBtn.classList.add('cards-section__view-btn--active');
-    listBtn.classList.remove('cards-section__view-btn--active');
-});
+function setView(mode) {
+    if (mode === 'list') {
+        cardsGrid.classList.add('cards-grid--list');
+        listBtn.classList.add('cards-section__view-btn--active');
+        gridBtn.classList.remove('cards-section__view-btn--active');
+    } else {
+        cardsGrid.classList.remove('cards-grid--list');
+        gridBtn.classList.add('cards-section__view-btn--active');
+        listBtn.classList.remove('cards-section__view-btn--active');
+    }
+    localStorage.setItem('viewMode', mode);
+}
 
-listBtn?.addEventListener('click', () => {
-    cardsGrid.classList.add('cards-grid--list');
-    listBtn.classList.add('cards-section__view-btn--active');
-    gridBtn.classList.remove('cards-section__view-btn--active');
-});
+// Restore saved view
+const saved = localStorage.getItem('viewMode');
+if (saved === 'list') {
+    setView('list');
+}
+
+gridBtn?.addEventListener('click', () => setView('grid'));
+listBtn?.addEventListener('click', () => setView('list'));

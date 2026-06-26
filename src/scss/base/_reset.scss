@@ -16,6 +16,8 @@ html {
 
 body {
     min-height: 100dvh;
+    min-width: 320px;
+    font-size: 14px;
     line-height: 1.1;
     font-family: $font-roboto;
     font-weight: 400;

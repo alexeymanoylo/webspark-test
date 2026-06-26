@@ -28,15 +28,36 @@
     &__source {
         width: 50%;
     }
+    
+    &__source {
+        @media (max-width: 425px) {
+            font-size: 12px;
+        }
+    }
 
     &__date-time {
         text-align: right;
+        
+        @media (max-width: 425px) {
+            font-size: 12px;
+        }
     }
 
     &__label,
     &__date {
+        font-size: 16px;
         display: block;
         margin-bottom: 7px;
+        
+        @media (max-width: 425px) {
+            font-size: 14px;
+        }
+    }
+    
+    &__stat-value {
+        @media (max-width: 425px) {
+            font-size: 12px;
+        }
     }
 
     &__stats {
@@ -69,17 +90,26 @@
 }
 
 .cards-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px 8px;
 
-    .card {
-        width: calc(25% - 6px);
+    @media (max-width: 850px) {
+        grid-template-columns: repeat(3, 1fr);
     }
 
+    @media (max-width: 680px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 460px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
     &.cards-grid--list {
+        grid-template-columns: 1fr;
+
         .card {
-            width: 100%;
             display: flex;
 
             &__picture {
@@ -100,6 +130,10 @@
                         flex-direction: row;
                         gap: 26px;
                     }
+                    
+                    .card__source {
+                        width: 100%;
+                    }
 
                     &--upload-time {
                         margin-top: 0;
@@ -108,6 +142,42 @@
                         .card__date-time {
                             text-align: left;
                             width: auto;
+                        }
+                    }
+                }
+            }
+            
+            @media (max-width: 550px) {
+                .card__picture {
+                    width: 110px;
+                    height: 110px;
+                }
+                
+                .card__body {
+                    padding: 16px;
+                    
+                    .card__col {
+                        &--upload-time {
+                            width: 100%;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            margin-top: 10px;
+                            
+                            .card__source {
+                                width: auto;
+                            }
+                            
+                            .card__date-time {
+                                margin-left: 0;
+                            }
+                        }
+                        
+                        &--stats {
+                            width: calc(50% - 4px);
+
+                            .card__stats {
+                                gap: 12px;
+                            }
                         }
                     }
                 }
