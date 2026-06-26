@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display: none;">
+    <symbol id="icon-close" viewBox="0 0 12 12">
+        <path d="M1 1l10 10M11 1l-10 10" stroke="currentColor" stroke-width="2"/>
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24">
+        <path d="M7 11H9V13H7V11ZM7 15H9V17H7V15ZM11 11H13V13H11V11ZM11 15H13V17H11V15ZM15 11H17V13H15V11ZM15 15H17V17H15V15Z" fill="currentColor"/>
+        <path d="M5 22H19C20.103 22 21 21.103 21 20V6C21 4.897 20.103 4 19 4H17V2H15V4H9V2H7V4H5C3.897 4 3 4.897 3 6V20C3 21.103 3.897 22 5 22ZM19 8L19.001 20H5V8H19Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 18 18">
+        <path d="M1.5 6.29999C1.49991 5.76177 1.6071 5.22893 1.8153 4.7326C2.02351 4.23628 2.32855 3.78644 2.71261 3.40936C3.09667 3.03229 3.55203 2.73555 4.05209 2.53648C4.55215 2.33742 5.08687 2.24003 5.625 2.24999C6.26172 2.24661 6.89189 2.37859 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.74999C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.37859 11.7383 2.24661 12.375 2.24999C12.9131 2.24003 13.4479 2.33742 13.9479 2.53648C14.448 2.73555 14.9033 3.03229 15.2874 3.40936C15.6714 3.78644 15.9765 4.23628 16.1847 4.7326C16.3929 5.22893 16.5001 5.76177 16.5 6.29999C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.29999Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-comment" viewBox="0 0 18 18">
+        <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-grid" viewBox="0 0 22 22">
+        <path d="M0 0H6V6H0V0Z" fill="currentColor"/>
+        <path d="M8 0H14V6H8V0Z" fill="currentColor"/>
+        <path d="M16 0H22V6H16V0Z" fill="currentColor"/>
+        <path d="M0 8H6V14H0V8Z" fill="currentColor"/>
+        <path d="M0 16H6V22H0V16Z" fill="currentColor"/>
+        <path d="M8 8H14V14H8V8Z" fill="currentColor"/>
+        <path d="M8 16H14V22H8V16Z" fill="currentColor"/>
+        <path d="M16 8H22V14H16V8Z" fill="currentColor"/>
+        <path d="M16 16H22V22H16V16Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-list" viewBox="0 0 24 22">
+        <rect width="6" height="6" fill="currentColor"/>
+        <rect y="8" width="6" height="6" fill="currentColor"/>
+        <rect y="16" width="6" height="6" fill="currentColor"/>
+        <rect x="9" y="10" width="15" height="2" fill="currentColor"/>
+        <rect x="9" y="18" width="15" height="2" fill="currentColor"/>
+        <rect x="9" y="2" width="15" height="2" fill="currentColor"/>
+    </symbol>
+</svg>
