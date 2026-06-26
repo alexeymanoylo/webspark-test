@@ -1,0 +1,46 @@
+.main-content {
+    position: relative;
+
+    &__bg-shape {
+        position: fixed;
+        z-index: -1;
+        pointer-events: none;
+        right: 0;
+        bottom: 0;
+        width: 25vw;
+        height: 19vw;
+        max-width: 210px;
+        min-width: 180px;
+        background: url('../../images/bg-shape-bottom.svg') no-repeat right bottom / contain;
+
+        @media (max-width: 1100px) {
+            display: none;
+        }
+    }
+}
+
+.cards-section {
+    max-width: 868px;
+    margin: 0 auto;
+    padding: 0 16px 60px;
+    
+    &__load-more {
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    &__view-switcher {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 23px;
+        gap: 20px;
+    }
+    
+    &__view-btn {
+        color: #3D8EDA;
+    }
+    
+    &__view-btn--active {
+        color: #C8C8C8;
+    }
+}
