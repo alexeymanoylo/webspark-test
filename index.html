@@ -2,12 +2,537 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="/src/scss/main.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>WebSpark</title>
+    <title>monblanproject</title>
+    <link rel="icon" type="image/svg+xml" href="/src/images/logo.svg">
     <script type="module" src="/src/js/main.js"></script>
 </head>
 <body>
-<h1>hello world</h1>
+
+<main class="main-content">
+    <header class="page-header">
+        <div class="page-header__bg-shape"></div>
+        <div class="page-header__container">
+            <a href="/" class="page-header__logo" title="Monblan Logo">
+                <img src="./src/images/logo.svg" alt="Monblan Logo">
+            </a>
+
+            <div class="page-header__info">
+                <div class="page-header__heading">
+                    <h1 class="page-header__title">monblanproject</h1>
+                    <span class="page-header__badge">Start on 17-02-2016</span>
+                </div>
+
+                <ul class="page-header__stats">
+                    <li class="page-header__stat-item"><strong>870</strong> posts</li>
+                    <li class="page-header__stat-item"><strong>11,787</strong> followers</li>
+                    <li class="page-header__stat-item"><strong>112</strong> following</li>
+                </ul>
+
+                <div class="page-header__datepicker" role="group" aria-label="Date filter">
+                    <span class="page-header__date-label">Date</span>
+                    <div class="page-header__date-range">
+                        <div class="page-header__date-input-wrapper">
+                            <input type="text" id="date-from" class="page-header__date-input" placeholder="from"
+                                   data-input>
+                            <div class="page-header__date-actions">
+                                <button type="button" class="page-header__date-clear" aria-label="Clear date"
+                                        data-clear>
+                                    <svg class="icon icon--xs">
+                                        <use href="/src/images/icons/sprite.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                                <label class="page-header__date-calendar" aria-label="Pick date" for="date-from"
+                                       data-toggle>
+                                    <svg class="icon icon--md">
+                                        <use href="/src/images/icons/sprite.svg#icon-calendar"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="page-header__date-input-wrapper">
+                            <input type="text" id="date-to" class="page-header__date-input" placeholder="to" data-input>
+                            <div class="page-header__date-actions">
+                                <button type="button" class="page-header__date-clear" aria-label="Clear date"
+                                        data-clear>
+                                    <svg class="icon icon--xs">
+                                        <use href="/src/images/icons/sprite.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                                <label class="page-header__date-calendar" aria-label="Pick date" for="date-to"
+                                       data-toggle>
+                                    <svg class="icon icon--md">
+                                        <use href="/src/images/icons/sprite.svg#icon-calendar"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cards-section">
+        <div class="cards-section__view-switcher">
+            <button type="button"
+                    class="cards-section__view-btn cards-section__view-btn--tiles cards-section__view-btn--active"
+                    aria-label="Grid" title="Grid">
+                <svg class="icon icon--md">
+                    <use href="/src/images/icons/sprite.svg#icon-grid"></use>
+                </svg>
+            </button>
+            <button type="button" class="cards-section__view-btn cards-section__view-btn--list"
+                    aria-label="List" title="List">
+                <svg class="icon icon--md">
+                    <use href="/src/images/icons/sprite.svg#icon-list"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="cards-grid">
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="./src/images/gallery/photo-1.webp" type="image/webp">
+
+                    <img
+                            src="./src/images/gallery/photo-1.jpg"
+                            alt="Example alt text 1"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="./src/images/gallery/photo-2.webp" type="image/webp">
+
+                    <img
+                            src="./src/images/gallery/photo-2.jpg"
+                            alt="Example alt text 2"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="./src/images/gallery/photo-3.webp" type="image/webp">
+
+                    <img
+                            src="./src/images/gallery/photo-3.jpg"
+                            alt="Example alt text 3"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="./src/images/gallery/photo-4.webp" type="image/webp">
+
+                    <img
+                            src="./src/images/gallery/photo-4.jpg"
+                            alt="Example alt text 4"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="./src/images/gallery/photo-5.webp" type="image/webp">
+
+                    <img
+                            src="./src/images/gallery/photo-5.jpg"
+                            alt="Example alt text 5"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="./src/images/gallery/photo-6.webp" type="image/webp">
+
+                    <img
+                            src="./src/images/gallery/photo-6.jpg"
+                            alt="Example alt text 6"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="./src/images/gallery/photo-7.webp" type="image/webp">
+
+                    <img
+                            src="./src/images/gallery/photo-7.jpg"
+                            alt="Example alt text 7"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="./src/images/gallery/photo-8.webp" type="image/webp">
+
+                    <img
+                            src="./src/images/gallery/photo-8.jpg"
+                            alt="Example alt text 8"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/src/images/icons/sprite.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cards-section__load-more">
+            <a href="javascript:void(0);" class="btn outlined">Load more</a>
+        </div>
+    </section>
+    <div class="main-content__bg-shape"></div>
+</main>
+
+<svg width="0" height="0" aria-hidden="true">
+    <defs>
+        <clipPath id="wave-clip" clipPathUnits="objectBoundingBox">
+            <path d="M0.2270 0.8819 C0.1362 1.0407 0.0378 1.0042 0 0.9661 L-0.0937 0.7739 L-0.0857 0.0038 L0.4563 -0.2123 L1 -0.0088 C0.9244 0.0294 0.9063 0.0578 0.8960 0.1307 C0.8786 0.2541 0.8339 0.3920 0.8119 0.4259 C0.7262 0.6106 0.5770 0.5415 0.4873 0.5389 C0.3976 0.5364 0.3373 0.5766 0.3040 0.6809 C0.2786 0.7604 0.2444 0.8497 0.2270 0.8819 Z"/>
+        </clipPath>
+    </defs>
+</svg>
 </body>
 </html>
