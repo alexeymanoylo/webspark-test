@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>monblanproject</title>
+    <link rel="icon" type="image/svg+xml" href="/webspark-test/assets/logo-CbjsbUNI.svg">
+  <script type="module" crossorigin src="/webspark-test/assets/index-m5pS3AF-.js"></script>
+  <link rel="stylesheet" crossorigin href="/webspark-test/assets/index-BZT3Zd1S.css">
+</head>
+<body>
+
+<main class="main-content">
+    <header class="page-header">
+        <div class="page-header__bg-shape"></div>
+        <div class="page-header__container">
+            <a href="/" class="page-header__logo" title="Monblan Logo">
+                <img src="data:image/svg+xml,%3csvg%20width='138'%20height='138'%20viewBox='0%200%20138%20138'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M56.5%207.21688C64.235%202.75106%2073.765%202.75106%2081.5%207.21688L116.256%2027.2831C123.991%2031.7489%20128.756%2040.0021%20128.756%2048.9338V89.0662C128.756%2097.9979%20123.991%20106.251%20116.256%20110.717L81.5%20130.783C73.765%20135.249%2064.235%20135.249%2056.5%20130.783L21.7442%20110.717C14.0092%20106.251%209.24425%2097.9979%209.24425%2089.0662V48.9338C9.24425%2040.0021%2014.0092%2031.7489%2021.7442%2027.2831L56.5%207.21688Z'%20fill='white'/%3e%3cpath%20d='M128.756%2088.5317V89.0662C128.756%2097.9979%20123.991%20106.251%20116.256%20110.717L81.5%20130.783C73.765%20135.249%2064.235%20135.249%2056.5%20130.783L21.7442%20110.717C21.1716%20110.386%2020.6152%20110.035%2020.0758%20109.664L17.5%20101L26%2068L33.5%2056L55.5%2078.5L82.5%2038.5L128.756%2088.5317Z'%20fill='%23066C61'/%3e%3cpath%20d='M18.1726%20108.216C14.6282%20105.242%2011.9954%20101.354%2010.5392%2097.0092L10.5%2096.5C11.6667%2083.5%2016.7%2056.8%2027.5%2054C41.5%2050.3704%2048.5%2096.5%2048.5%2096.5C48.5%2096.5%2054.7204%2032.2561%2074%2033.5C89.5%2034.5%2095.5%2066.5%2091.5%20125L91.4793%20125.022L81.5%20130.783C78.1083%20132.741%2074.3715%20133.841%2070.5923%20134.082C77.5658%20121.943%2076.9064%2074.0186%2073.5%2056.5C71.5082%2062.0157%2069.939%2070.5009%2068.2456%2079.6574C64.4128%20100.382%2059.9439%20124.546%2048.5%20125.5C48.0761%20125.535%2047.6559%20125.513%2047.2396%20125.437L43.4536%20123.251C36.248%20116.272%2030.6804%2094.8558%2028.5%2083C28.103%2093.7194%2024.061%20105.982%2022.0451%20110.891L21.7442%20110.717C21.4834%20110.566%2021.2259%20110.411%2020.9718%20110.252L18.1726%20108.216Z'%20fill='%23B3DBC9'/%3e%3c/svg%3e" alt="Monblan Logo">
+            </a>
+
+            <div class="page-header__info">
+                <div class="page-header__heading">
+                    <h1 class="page-header__title">monblanproject</h1>
+                    <span class="page-header__badge">Start on 17-02-2016</span>
+                </div>
+
+                <ul class="page-header__stats">
+                    <li class="page-header__stat-item"><strong>870</strong> posts</li>
+                    <li class="page-header__stat-item"><strong>11,787</strong> followers</li>
+                    <li class="page-header__stat-item"><strong>112</strong> following</li>
+                </ul>
+
+                <div class="page-header__datepicker" role="group" aria-label="Date filter">
+                    <span class="page-header__date-label">Date</span>
+                    <div class="page-header__date-range">
+                        <div class="page-header__date-input-wrapper">
+                            <input type="text" id="date-from" class="page-header__date-input" placeholder="from"
+                                   data-input>
+                            <div class="page-header__date-actions">
+                                <button type="button" class="page-header__date-clear" aria-label="Clear date"
+                                        data-clear>
+                                    <svg class="icon icon--xs">
+                                        <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                                <label class="page-header__date-calendar" aria-label="Pick date" for="date-from"
+                                       data-toggle>
+                                    <svg class="icon icon--md">
+                                        <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-calendar"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="page-header__date-input-wrapper">
+                            <input type="text" id="date-to" class="page-header__date-input" placeholder="to" data-input>
+                            <div class="page-header__date-actions">
+                                <button type="button" class="page-header__date-clear" aria-label="Clear date"
+                                        data-clear>
+                                    <svg class="icon icon--xs">
+                                        <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                                <label class="page-header__date-calendar" aria-label="Pick date" for="date-to"
+                                       data-toggle>
+                                    <svg class="icon icon--md">
+                                        <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-calendar"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cards-section">
+        <div class="cards-section__view-switcher">
+            <button type="button"
+                    class="cards-section__view-btn cards-section__view-btn--tiles cards-section__view-btn--active"
+                    aria-label="Grid" title="Grid">
+                <svg class="icon icon--md">
+                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-grid"></use>
+                </svg>
+            </button>
+            <button type="button" class="cards-section__view-btn cards-section__view-btn--list"
+                    aria-label="List" title="List">
+                <svg class="icon icon--md">
+                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-list"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="cards-grid">
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="/webspark-test/assets/photo-1-D_4JxyBt.webp" type="image/webp">
+
+                    <img
+                            src="/webspark-test/assets/photo-1-BX4blDpp.jpg"
+                            alt="Example alt text 1"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="/webspark-test/assets/photo-2-DFHvduie.webp" type="image/webp">
+
+                    <img
+                            src="/webspark-test/assets/photo-2-3Z8wexZh.jpg"
+                            alt="Example alt text 2"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="/webspark-test/assets/photo-3-CvnPBvZd.webp" type="image/webp">
+
+                    <img
+                            src="data:image/jpeg;base64,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"
+                            alt="Example alt text 3"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="/webspark-test/assets/photo-4-B1JC5e2g.webp" type="image/webp">
+
+                    <img
+                            src="/webspark-test/assets/photo-4-UPZpwhBD.jpg"
+                            alt="Example alt text 4"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="/webspark-test/assets/photo-5-uKFBJwZB.webp" type="image/webp">
+
+                    <img
+                            src="/webspark-test/assets/photo-5-CyyFV7Fv.jpg"
+                            alt="Example alt text 5"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="/webspark-test/assets/photo-6-Djci48Bg.webp" type="image/webp">
+
+                    <img
+                            src="data:image/jpeg;base64,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"
+                            alt="Example alt text 6"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="/webspark-test/assets/photo-7-BS5k8Yuv.webp" type="image/webp">
+
+                    <img
+                            src="/webspark-test/assets/photo-7-BDDT9ui-.jpg"
+                            alt="Example alt text 7"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <picture class="card__picture">
+                    <source srcset="/webspark-test/assets/photo-8-BfKvtMUF.webp" type="image/webp">
+
+                    <img
+                            src="/webspark-test/assets/photo-8-C5UdjRtb.jpg"
+                            alt="Example alt text 8"
+                            class="card__img"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </picture>
+                <div class="card__body">
+                    <div class="card__col card__col--stats">
+                        <div class="card__label">Today</div>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">128</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--stats">
+                        <time class="card__date" datetime="2016-08-09">9-08-2016</time>
+                        <div class="card__stats">
+                            <div class="card__stat-item card__stat-item--likes">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-heart"></use>
+                                </svg>
+                                <span class="card__stat-value">67</span>
+                            </div>
+                            <div class="card__stat-item card__stat-item--comments">
+                                <svg class="icon icon--md">
+                                    <use href="/webspark-test/assets/sprite-C9y4KMTf.svg#icon-comment"></use>
+                                </svg>
+                                <span class="card__stat-value">22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__col card__col--upload-time">
+                        <span class="card__source">Image upload</span>
+                        <time class="card__date-time" datetime="2016-04-11">11-04-2016</time>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cards-section__load-more">
+            <button type="button" class="btn outlined">Load more</button>
+        </div>
+    </section>
+    <div class="main-content__bg-shape"></div>
+</main>
+
+<svg width="0" height="0" aria-hidden="true">
+    <defs>
+        <clipPath id="wave-clip" clipPathUnits="objectBoundingBox">
+            <path d="M0.2270 0.8819 C0.1362 1.0407 0.0378 1.0042 0 0.9661 L-0.0937 0.7739 L-0.0857 0.0038 L0.4563 -0.2123 L1 -0.0088 C0.9244 0.0294 0.9063 0.0578 0.8960 0.1307 C0.8786 0.2541 0.8339 0.3920 0.8119 0.4259 C0.7262 0.6106 0.5770 0.5415 0.4873 0.5389 C0.3976 0.5364 0.3373 0.5766 0.3040 0.6809 C0.2786 0.7604 0.2444 0.8497 0.2270 0.8819 Z"/>
+        </clipPath>
+    </defs>
+</svg>
+</body>
+</html>
