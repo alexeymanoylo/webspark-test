@@ -15,11 +15,12 @@ npm install
 npm run dev       # start Vite dev server
 ```
 
-## Build
+## Build & Deploy
 
 ```bash
 npm run build     # production build to dist/
 npm run preview   # preview production build
+npm run deploy    # build + deploy to GitHub Pages (gh-pages branch)
 ```
 
 ## Stack
