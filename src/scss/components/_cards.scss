@@ -86,8 +86,10 @@
         }
     }
 
-    &:hover .card__img {
-        transform: scale(1.05);
+    @media (hover: hover) {
+        &:hover .card__img {
+            transform: scale(1.05);
+        }
     }
 }
 
