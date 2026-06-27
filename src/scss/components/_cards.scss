@@ -1,12 +1,14 @@
+@use '../base/variables' as *;
+
 .card {
-    background: #fff;
+    background: $card-bg;
 
     &__picture {
         display: block;
         width: 100%;
         aspect-ratio: 1 / 1;
         overflow: hidden;
-        background-color: #f5f5f5;
+        background-color: $card-picture-bg;
     }
 
     &__img {

@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 .main-content {
     position: relative;
 
@@ -37,10 +39,10 @@
     }
     
     &__view-btn {
-        color: #3D8EDA;
+        color: $accent-color;
     }
     
     &__view-btn--active {
-        color: #C8C8C8;
+        color: $accent-inactive;
     }
 }

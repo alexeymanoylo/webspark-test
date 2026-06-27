@@ -1,10 +1,22 @@
-//Base
+// Base
 $font-roboto: 'Roboto', 'Arial', sans-serif;
 $font-montserrat: 'Montserrat', 'Arial', sans-serif;
 $border-color: #DEDEDE;
 $main-bg-color: #fafafa;
+$accent-color: #3D8EDA;
+$accent-inactive: #C8C8C8;
+$header-bg: rgba(255, 255, 255, 0.67);
+$shape-gradient-start: #124757;
+$shape-gradient-end: #40AF79;
 
-//Buttons
+// Buttons
 $btn-border-radius: 14px;
 $btn-outlined-color: #929292;
-$btn-outlined-text-color: #929292;
+
+// Datepicker
+$date-actions-bg: #EBEBEB;
+$date-icon-color: #5F5F5F;
+
+// Cards
+$card-bg: #fff;
+$card-picture-bg: #f5f5f5;

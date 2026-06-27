@@ -3,7 +3,7 @@
 .page-header {
     position: relative;
     padding-bottom: 32px;
-    background: rgba(255,255,255,0.67);
+    background: $header-bg;
     box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12), inset 0 12px 24px 0 rgba(0, 0, 0, 0.12);
     margin-bottom: 18px;
 
@@ -50,7 +50,7 @@
         left: 0;
         right: calc(anchor(--logo right) - 130px);
         height: 398px;
-        background: linear-gradient(135deg, #124757, #40AF79);
+        background: linear-gradient(135deg, $shape-gradient-start, $shape-gradient-end);
         clip-path: url(#wave-clip);
         pointer-events: none;
         z-index: -1;
@@ -101,12 +101,12 @@
     
     &__badge {
         padding: 6px 12px;
-        border: 1px solid #3D8EDA;
+        border: 1px solid $accent-color;
         border-radius: 2px;
         font-size: 13px;
         margin-left: 16px;
         letter-spacing: -0.03em;
-        color: #3D8EDA;
+        color: $accent-color;
         line-height: 1.1;
         display: inline-block;
         
@@ -153,7 +153,8 @@
     
     &__date-actions {
         display: flex;
-        background: #EBEBEB;
+        background: $date-actions-bg;
+        border-left: 1px solid $border-color;
     }
     
     &__date-calendar,
@@ -163,7 +164,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #5F5F5F;
+        color: $date-icon-color;
         cursor: pointer;
     }
     
