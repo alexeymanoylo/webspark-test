@@ -6,22 +6,12 @@ const fpFrom = flatpickr(wrappers[0], {
     wrap: true,
     disableMobile: true,
     dateFormat: 'd_m_Y',
-    onChange: (selectedDates) => {
-        if (selectedDates.length > 0) {
-            fpTo.set('minDate', selectedDates[0]);
-        }
-    },
 });
 
 const fpTo = flatpickr(wrappers[1], {
     wrap: true,
     disableMobile: true,
     dateFormat: 'd_m_Y',
-    onChange: (selectedDates) => {
-        if (selectedDates.length > 0) {
-            fpFrom.set('maxDate', selectedDates[0]);
-        }
-    },
 });
 
 // View switcher
