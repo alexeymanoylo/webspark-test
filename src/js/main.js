@@ -51,13 +51,15 @@ if (!CSS.supports('anchor-name', '--foo')) {
             const headerRect = shape.parentElement.getBoundingClientRect();
             const logoRect = logo.getBoundingClientRect();
 
-            let offset = 130;
+            let offset = 160;
             if (window.innerWidth < 680) {
-                offset = 30;
+                offset = 25;
             } else if (window.innerWidth < 768) {
                 offset = 36;
             } else if (window.innerWidth < 1200) {
                 offset = 100;
+            } else if (window.innerWidth < 1660) {
+                offset = 130;
             }
 
             const logoRightRelative = logoRect.right - headerRect.left;
